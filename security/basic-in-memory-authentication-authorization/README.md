@@ -19,7 +19,7 @@ The application this project produces is designed to be run on Wildfly.
 
 ## Project notes
 
-### Set up the project
+Additional project notes can be found in auxiliary-files/3-springsec-fundamentals-slides.pdf file.
 
 ## Server deployment
 
