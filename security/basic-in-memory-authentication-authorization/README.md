@@ -1,3 +1,5 @@
+# Spring Security Basic In Memory Authentication and Authorization
+
 ## Table of Contents
 **[Resource location](#resource-location)**  
 **[Overview](#overview)**
@@ -19,7 +21,7 @@ The application this project produces is designed to be run on Wildfly.
 
 ## Project notes
 
-Additional project notes can be found in auxiliary-files/3-springsec-fundamentals-slides.pdf file.
+Additional project notes can be found in exercise-files/3-springsec-fundamentals-slides.pdf file in the video tutorial.
 
 ## Server deployment
 
@@ -37,7 +39,7 @@ Additional project notes can be found in auxiliary-files/3-springsec-fundamental
 
         mvn wildfly:deploy  
 
-4. This will deploy `target/spring-security-basic-authentication-authorization.war` to the running instance of the server.
+4. This will deploy `target/spring-security-basic-in-memory-authentication-authorization.war` to the running instance of the server.
 
 ### Undeploy the Archive
 1. Make sure you have started the Wildfly Server as described above.
@@ -48,10 +50,10 @@ Additional project notes can be found in auxiliary-files/3-springsec-fundamental
 
 ## Access the application
 The application can be tested with following URLs:       
-* <http://localhost:8080/spring-security-basic-authentication-authorization/>
+* <http://localhost:8080/spring-security-basic-in-memory-authentication-authorization/>
 
 You should be redirected to the login page:
-* <http://localhost:8080/spring-security-basic-authentication-authorization/spring_security_login/>
+* <http://localhost:8080/spring-security-basic-in-memory-authentication-authorization/spring_security_login/>
 
 Login to the application with following credentials:
 * username - user
