@@ -41,7 +41,7 @@
     <dependency>
     	<groupId>org.springframework</groupId>
     	<artifactId>spring-webmvc</artifactId>
-    	<version>3.2.0.RELEASE</version>
+    	<version>3.2.6.RELEASE</version>
     </dependency>
     <dependency>
     	<groupId>javax.servlet</groupId>
@@ -72,11 +72,11 @@
 	<dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-oxm</artifactId>
-		<version>3.2.0.RELEASE</version>
+		<version>3.2.6.RELEASE</version>
 	</dependency>    
   </dependencies>
   <build>
-      <finalName>spring-security-basic-in-memory-authentication-authorization</finalName>
+      <finalName>basic-in-memory-authentication-authorization</finalName>
 	  <plugins>
 		  <!-- The WildFly plugin deploys your war to a local WildFly container -->
 		  <!-- To use, run: mvn package wildfly:deploy -->
