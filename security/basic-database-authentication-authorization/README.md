@@ -49,7 +49,7 @@ Additional project notes can be found in exercise-files/4-springsec-fundamentals
 
         mvn wildfly:deploy  
 
-4. This will deploy `target/spring-security-basic-database-authentication-authorization.war` to the running instance of the server.
+4. This will deploy `target/basic-database-authentication-authorization.war` to the running instance of the server.
 
 ### Undeploy the Archive
 1. Make sure you have started the Wildfly Server as described above.
@@ -60,10 +60,10 @@ Additional project notes can be found in exercise-files/4-springsec-fundamentals
 
 ## Access the application
 The application can be tested with following URLs:       
-* <http://localhost:8080/spring-security-basic-database-authentication-authorization/>
+* <http://localhost:8080/basic-database-authentication-authorization/>
 
 You should be redirected to the login page:
-* <http://localhost:8080/spring-security-basic-database-authentication-authorization/spring_security_login/>
+* <http://localhost:8080/basic-database-authentication-authorization/spring_security_login/>
 
 Login to the application with following credentials:
 * username - user
