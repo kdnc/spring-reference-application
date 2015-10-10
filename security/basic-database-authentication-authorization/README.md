@@ -28,8 +28,11 @@ Additional project notes can be found in exercise-files/4-springsec-fundamentals
 ### Database import
 
 1. Open a command line and navigate to the sql folder in the project.
+		
 		mysql -uroot -p123
+
 2. In the mysql console import the .sql file
+		
 		source fitnessTracker.sql
 
 ### Start Wildfly
