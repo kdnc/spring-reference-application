@@ -15,9 +15,7 @@
 How to secure a Spring MVC application with in memeory authentication and authorization
 
 ## System requirements
-All you need to build this project is Java 8.0 (Java SDK 1.8) or better, Maven 3.1 or better.
-
-The application this project produces is designed to be run on Wildfly.
+This project was successfully built using Java 7.0 (Java SDK 1.7), Maven 3.0.3 and Wildfly 8.1.0.Final.
 
 ## Project notes
 
