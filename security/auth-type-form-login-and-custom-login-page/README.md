@@ -91,6 +91,10 @@ This project was successfully built using Java 7.0 (Java SDK 1.7), Maven 3.0.3 a
 		<a class="btn btn-warning" href="j_spring_security_logout">
         	Logout >>
         </a>
+        
+6. sql/fitnessTracker.sql - Add a user with different role which does not have access to the application to test the redirection to the 403.html page.
+
+		INSERT INTO `authorities` VALUES ('user','ROLE_USER'),('admin','ROLE_ADMIN'),('admin','ROLE_USER'),('userdenied','ROLE_BAD');       
 
 ## Project notes
 
@@ -179,3 +183,15 @@ Additional project notes can be found in exercise-files/7-springsec-fundamentals
 		Fitness Tracker Custom Logout Page
 
 		You have been logged out thanks for using our app.
+        
+### Test scenario 4 - Deny access for a user to the application with a different role
+
+1. Navigate to the following url.       
+<http://localhost:8080/auth-type-form-login-and-custom-login-page/>
+2. You should be redirected to the <http://localhost:8080/auth-type-form-login-and-custom-login-page/login.html> page.
+3. Login to the application with following credentials:
+	* username - userdenied
+	* password - 123
+4. User should be displayed with the 403.jsp page content. Observe the following output.
+		
+		You are not authorized!!!

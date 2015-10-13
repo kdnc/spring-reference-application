@@ -42,7 +42,7 @@ CREATE TABLE `authorities` (
 
 LOCK TABLES `authorities` WRITE;
 /*!40000 ALTER TABLE `authorities` DISABLE KEYS */;
-INSERT INTO `authorities` VALUES ('user','ROLE_USER'),('admin','ROLE_ADMIN'),('admin','ROLE_USER');
+INSERT INTO `authorities` VALUES ('user','ROLE_USER'),('admin','ROLE_ADMIN'),('admin','ROLE_USER'),('userdenied','ROLE_BAD');
 /*!40000 ALTER TABLE `authorities` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -67,7 +67,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('user','$2a$10$81ycN4IjbEcZUel2zjInneaxj33y64zI2OhK/yHTWx7vl3SPmYd4G',1),('admin','$2a$10$81ycN4IjbEcZUel2zjInneaxj33y64zI2OhK/yHTWx7vl3SPmYd4G',1);
+INSERT INTO `users` VALUES ('user','$2a$10$81ycN4IjbEcZUel2zjInneaxj33y64zI2OhK/yHTWx7vl3SPmYd4G',1),('admin','$2a$10$81ycN4IjbEcZUel2zjInneaxj33y64zI2OhK/yHTWx7vl3SPmYd4G',1), ('userdenied','$2a$10$81ycN4IjbEcZUel2zjInneaxj33y64zI2OhK/yHTWx7vl3SPmYd4G',1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
