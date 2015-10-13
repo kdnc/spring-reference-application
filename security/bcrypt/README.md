@@ -20,7 +20,16 @@ This project was successfully built using Java 7.0 (Java SDK 1.7), Maven 3.0.3 a
 
 ## Important code blocks
 
-1. src/main/webapp/WEB-INF/config/security-config.xml - Declaration of password encoder
+1. sql/fitnessTracker.sql - Increase 'password' column size to varchar(60) in 'users' table
+
+		CREATE TABLE `users` (
+		  `username` varchar(50) NOT NULL,
+		  `password` varchar(60) DEFAULT NULL,
+		  `enabled` tinyint(1) NOT NULL,
+		  PRIMARY KEY (`username`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+2. src/main/webapp/WEB-INF/config/security-config.xml - Declaration of password encoder
 
 		<authentication-manager>
 			<authentication-provider> 
@@ -29,7 +38,7 @@ This project was successfully built using Java 7.0 (Java SDK 1.7), Maven 3.0.3 a
 			</authentication-provider>		
 		</authentication-manager>
 
-2. src/test/java/PasswordHash.java - Generate bcrypt password
+3. src/test/java/PasswordHash.java - Generate bcrypt password
 
 		@Test
 		public void testBCryptHash() {
