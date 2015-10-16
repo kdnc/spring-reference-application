@@ -101,16 +101,6 @@ Additional project notes can be found in exercise-files/8-springsec-fundamentals
 		Request method 'POST' not supported
 
 
-
-5. Clear the cookies.
-6. Navigate to the following url.       
-<http://localhost:8080/enabling-security-with-expressions/>
-7. You should be redirected to the <http://localhost:8080/enabling-security-with-expressions/login.html> page.
-8. Login to the application with following credentials:
-	* username - admin
-	* password - 123
-9. You should be able to successfully login and the welcome page should be displayed.
-
 ### Test scenario 2 - ROLE_ADMIN should be able to add a goal
 
 
