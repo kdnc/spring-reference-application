@@ -20,6 +20,14 @@
 	@EnableAspectJAutoProxy
 	public class AnimalFarmConfig
 
+Define aspect as a bean in configuration
+	
+	@Bean
+    public MethodTimeLoggingAspect aspect() {
+        return new MethodTimeLoggingAspect();
+    }
+	
+
 Define `Aspect`
 
 	@Aspect
@@ -27,21 +35,12 @@ Define `Aspect`
 
 		@Around("@annotation(tutorial.Timed)")
 		public Object time(ProceedingJoinPoint invocation) throws Throwable {
-	
-		}
-	}
 
-call the invoking method in aspect
-
-	@Aspect
-	public class MethodTimeLoggingAspect {
-
-		@Around("@annotation(tutorial.Timed)")
-		public Object time(ProceedingJoinPoint invocation) throws Throwable {
-
+			System.out.println(invocation.getSignature().getName() + "()");
 			Object result = invocation.proceed();
 		}
 	}
+
 
 Define the `@Timed` annotation on `Cat` class's `meow` method
 
