@@ -32,6 +32,11 @@
     <!--
 		- Location of the XML file that defines the root application context.
 		- Applied by ContextLoaderListener.
+
+		- Following is an introduction about two types of contextConfigLocation,
+		    - root context(parent)
+		    - individual servlet context(child)
+        - http://stackoverflow.com/questions/15818047/spring-namespace-vs-contextconfiglocation-init-parameters-in-web-xml
 	-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -111,8 +116,8 @@
     </filter-mapping>
 
     <!--  	No need for welcome-file declaration here.
-    		See inside spring/mvc-core-config.xml : 
-    		<mvc:view-controller path="/" view-name="welcome" /> 
+    		See inside spring/mvc-core-config.xml :
+    		<mvc:view-controller path="/" view-name="welcome" />
     -->
 
 </web-app>
